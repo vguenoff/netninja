@@ -1,8 +1,19 @@
 export default function typeBasics() {
-  console.log('03TypeBasics')
+  let age = 38 // inferred type is string
+  // age = 'thirty seven' // Error: Type 'string' is not assignable to type 'number'.
 
-  let name = 'Vasil'
-  // name = 123 // Error: Type 'number' is not assignable to type 'string'.
+  console.log(age)
 
-  console.log(name)
+  // explicit typing
+  let firstName: string = 'Vasil'
+  let isFictional: boolean = false
+  // isFictional = 1 // Error
+
+  // null
+  let something: null
+  // undefined
+  let anotherThing: undefined
+
+  // something = 10
+  // anotherThing = 'asd'
 }
